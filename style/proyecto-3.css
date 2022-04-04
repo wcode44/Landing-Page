@@ -1,0 +1,167 @@
+/* ==============================
+    lANDING PAGE - FREECODECAMP
+=================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+
+:root {
+  --border-menu: #006778;
+
+  --white: #FFF;
+  --black: #000;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: var(--black);
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* REGLAS GENERALES */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* STYLES GENERAL CONTAINER */
+.container {
+  width: 96%;
+  max-width: 96rem;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--white);
+}
+
+.header
+.container {
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.logo__image {
+  width: 4rem;
+}
+
+.logo__text {
+  font-size: 2.5rem;
+}
+
+/* NAV BAR */
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.interruptor {
+  display: none;
+}
+
+.btn-menu {
+  width: 3.6rem;
+  height: 3.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn-menu img {
+  width: 100%;
+}
+
+.menu {
+  width: 96%;
+  padding: .3rem;
+  border-radius: .5rem;
+  border: .1rem solid var(--border-menu);
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+  flex-direction: column;
+  gap: .3rem;
+
+  background-color: var(--white);
+}
+
+.menu li {
+  border-radius: .5rem;
+  border: .1rem solid var(--border-menu);
+}
+
+.nav-link {
+  display: block;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.interruptor:checked ~ .menu {
+  display: flex;
+}
+
+
+
+
+/* IPAD */
+@media ( min-width: 700px ) {
+  .nav-bar > * {
+    margin: initial;
+    padding: initial;
+    position: initial;
+    transform: initial;
+    width: initial;
+    border: initial;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .menu li {
+    border: initial;
+  }
+
+  .nav-link {
+    padding: initial;
+  }
+}
+
+
+
+
+
