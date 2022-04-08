@@ -13,7 +13,7 @@
   <div class="wrapper">
     <!-- HEADER -->
     <header id="header" class="header">
-      <div class="container">
+      <div class="header__container">
         <!-- LOGO -->
         <div class="logo">
           <img
@@ -53,32 +53,41 @@
       </div>
     </header>
 
+    <!-- MAIN -->
     <main>
-      <div class="main__container">
-        <section class="section">
-          <div class="section__main">
+      <!-- SECTION - 1 -->
+      <section class="section">
+        <div class="section__container-main">
+
+          <div class="section__container-small">
             <h2 class="section__title">Our product<br>is <strong>coming soon</strong></h2>
             <p class="section__parrafo-1">
               A supporting statement for your value proposition to encourage customers to complete your CTA
             </p>
             <a class="section__btn-cta"href="#">Notify me</a>
           </div>
+
           <img
-            class="section__figure"
+            class="section__image-1"
             src="./images/image-1.svg"
             alt=""
           />
-        </section>
-      </div>
 
-      <div class="main__container">
-        <section class="section">
+        </div>
+      </section>
+
+      <!-- SECTION - 2 -->
+      <section class="section">
+        <div class="section__container-main">
+
           <h3 class="section__subtitle">Your Product in the Wild</h3>
           <p class="section__parrafo-1">
             A few words about your product/offer. Focus on the benefits not the features. Explain how your product will improve your customer’s life.
           </p>
-          <div class="section__product">
-            <article class="article">
+
+          <div class="section__container-cards">
+
+            <article class="article-product">
               <img
                 class="article__image"
                 src="./images/product-1.png"
@@ -90,7 +99,7 @@
               </p>
             </article>
 
-            <article class="article">
+            <article class="article-product">
               <img
                 class="article__image"
                 src="./images/product-2.png"
@@ -102,7 +111,7 @@
               </p>
             </article>
 
-            <article class="article">
+            <article class="article-product">
               <img
                 class="article__image"
                 src="./images/product-3.png"
@@ -113,16 +122,141 @@
                 Add a description of your offer and key benefits. What it is and how it helps your customer.
               </p>
             </article>
+
           </div>
-        </section>
 
-      </div>
+        </div>
+      </section>
 
+      <!-- SECTION - 3 -->
+      <section class="section">
+        <div class="section__container-main">
+
+          <img 
+            class="section__image-2"
+            src="./images/image-2.svg"
+            alt=""
+          />
+
+          <div class="section__container-small">
+            <h3 class="section__subtitle"><strong>Sign up</strong> now and don’t miss anything</h3>
+            <p class="section__parrafo-1">
+              A supporting statement for your value proposition to encourage customers to complete your CTA
+            </p>
+            <a class="section__btn-cta"href="#">Notify me</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION - 4 -->
+      <section class="section">
+        <div class="section__container-main">
+
+          <h3 class="section__subtitle">Clear Value for Your Customer</h3>
+    
+          <div class="section__container-cards">
+
+            <article class="article-services">
+              <img
+                class="article__image"
+                src="./images/icon-1.png"
+                alt="service 1"
+              />
+              <p class="article__text">
+                Add a description of your offer and key benefits.
+              </p>
+            </article>
+    
+            <article class="article-services">
+              <img
+                class="article__image"
+                src="./images/icon-2.png"
+                alt="service 2"
+              />
+              <p class="article__text">
+                How will this help solve the customer’s issues in the future.
+              </p>
+            </article>
+    
+            <article class="article-services">
+              <img
+                class="article__image"
+                src="./images/icon-3.png"
+                alt="service 3"
+              />
+              <p class="article__text">
+                What it is and how it helps your customer.
+              </p>
+            </article>
+    
+            <article class="article-services">
+              <img
+                class="article__image"
+                src="./images/icon-4.png"
+                alt="service 4"
+              />
+              <p class="article__text">
+                How will your product change your customer’s life.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__container-main">
+          <div class="section__container-small">
+            <p class="section__parrafo-3">
+              <strong>A few sentences about your product.</strong> How it help to solve clients’ problems. It should convince the unconvinced. No fake quotes or photos!
+            </p>
+
+            <p class="section__parrafo-2">
+              A few words about your product/offer. Focus on the benefits not the features. Explain how your product will improve your customer’s life.
+            </p>
+
+            <a class="section__btn-cta"href="#">Notify me</a>
+          </div>
+
+          <iframe id="video" class="video" src="https://www.youtube.com/embed/c21QZnQtGqo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__container-main">
+          <h3 class="section__subtitle">Encourage customer to complete your CTA</h3>
+          <p class="section__parrafo-1">
+          Sing up and receive a message when we launch our project.
+          </p>
+        </div>
+        <form action="#" id="form" class="form">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your name"
+            required
+          />
+          <input
+            class="input"
+            type="email"
+            placeholder="Your e-mail"
+            required
+          />
+          <input
+            class="section__btn-cta"
+            type="submit"
+            value="Notify me"
+          />
+        </form>
+      </section>
     </main>
 
-
-
-
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Tacna - Perú<br>2022</p>
+    </footer>
   </div>
 </body>
 </html>
