@@ -40,13 +40,13 @@
           </label>
           <ul class="menu">
             <li>
-              <a href="#" class="nav-link">ITEM 1</a>
+              <a href="#products" class="nav-link">Products</a>
             </li>
             <li>
-              <a href="#" class="nav-link">ITEM 2</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li>
-              <a href="#" class="nav-link">ITEM 3</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +64,7 @@
             <p class="section__parrafo-1">
               A supporting statement for your value proposition to encourage customers to complete your CTA
             </p>
-            <a class="section__btn-cta"href="#">Notify me</a>
+            <a class="section__btn-cta"href="#contacto">Notify me</a>
           </div>
 
           <img
@@ -78,7 +78,7 @@
 
       <!-- SECTION - 2 -->
       <section class="section">
-        <div class="section__container-main">
+        <div class="section__container-main" id="products">
 
           <h3 class="section__subtitle">Your Product in the Wild</h3>
           <p class="section__parrafo-1">
@@ -143,7 +143,7 @@
             <p class="section__parrafo-1">
               A supporting statement for your value proposition to encourage customers to complete your CTA
             </p>
-            <a class="section__btn-cta"href="#">Notify me</a>
+            <a class="section__btn-cta"href="#contacto">Notify me</a>
           </div>
 
         </div>
@@ -151,7 +151,7 @@
 
       <!-- SECTION - 4 -->
       <section class="section">
-        <div class="section__container-main">
+        <div class="section__container-main" id="services">
 
           <h3 class="section__subtitle">Clear Value for Your Customer</h3>
     
@@ -206,6 +206,7 @@
         </div>
       </section>
 
+      <!-- SECTION - 5 -->
       <section class="section">
         <div class="section__container-main">
           <div class="section__container-small">
@@ -217,21 +218,22 @@
               A few words about your product/offer. Focus on the benefits not the features. Explain how your product will improve your customer’s life.
             </p>
 
-            <a class="section__btn-cta"href="#">Notify me</a>
+            <a class="section__btn-cta"href="#contacto">Notify me</a>
           </div>
 
           <iframe id="video" class="video" src="https://www.youtube.com/embed/c21QZnQtGqo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
 
+      <!-- SECTION - 6 -->
       <section class="section">
-        <div class="section__container-main">
+        <div class="section__container-main" id="contact">
           <h3 class="section__subtitle">Encourage customer to complete your CTA</h3>
           <p class="section__parrafo-1">
           Sing up and receive a message when we launch our project.
           </p>
         </div>
-        <form action="#" id="form" class="form">
+        <form action="https://www.freecodecamp.com/email-submit" id="form" class="form">
           <input
             class="input"
             type="text"
@@ -239,12 +241,14 @@
             required
           />
           <input
+            id="email"
             class="input"
             type="email"
             placeholder="Your e-mail"
             required
           />
           <input
+            id="submit"
             class="section__btn-cta"
             type="submit"
             value="Notify me"
