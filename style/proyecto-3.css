@@ -211,14 +211,11 @@ img {
   cursor: pointer;
 }
 
-
-/* ESTO SERA HORIZONTAL EN IPAD */
 .section__container-cards {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-/* ================================= */
 
 .article-product,
 .article-services {
@@ -238,6 +235,10 @@ img {
 .article__text {
   padding: 0 4.5rem;
 }
+
+
+
+
 
 /* FORM */
 .form {
@@ -310,34 +311,45 @@ input[type="submit"] {
 
 .video {
   width: 100%;
-  height: 15rem;
+  height: 20rem;
 }
 
 
 
 
 
+@media ( min-width: 400px ) {
+  .section__title {
+    font-size: 4rem;
+  }
+
+  .section__subtitle {
+    font-size: 3.3rem;
+  }
+
+  .section__parrafo-1 {
+    font-size: 1.8rem;
+  }
+
+  .section__parrafo-2,
+  .article__text {
+    font-size: 1.7rem;
+  }
+
+  .section__parrafo-3 {
+    font-size: 2.3rem;
+  }
+
+  .video {
+    height: 21rem;
+  }
+
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* IPAD */
-/* NO-TOCAR */
 @media ( min-width: 700px ) {
   .nav-bar > * {
     margin: initial;
@@ -365,7 +377,6 @@ input[type="submit"] {
   .nav-link {
     padding: initial;
   }
-  /* NO TOCAR HASTA AQUI */
 
 
 
@@ -376,7 +387,6 @@ input[type="submit"] {
   .section__image-1,
   .section__image-2 {
     max-width: 40%;
-    /* background-color: pink; */
   }
   
   .section:nth-child( odd )
@@ -386,7 +396,6 @@ input[type="submit"] {
     gap: 8rem;
 
     padding: initial;
-    /* background-color: lime; */
   }
 
   .section:nth-child( even )
@@ -406,7 +415,7 @@ input[type="submit"] {
   .section:nth-of-type(2)
   .section__container-cards {
     flex-direction: row;
-    gap: 6rem;
+    gap: initial;
   }
 
   /* SECTION - 3 */
